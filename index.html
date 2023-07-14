@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style type="text/css" media="screen">
+        .inst {
+            align-items: center;
+            font-size: 80px;
+            text-align: center;
+            padding-right: 10px;
+            background-color: whitesmoke;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .view {
+            text-align: center;
+            font-size: 45px;
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .navbar-nav {
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+
+        .wor {
+            background-color: black;
+            padding-left: 10px;
+        }
+
+        .ser {
+            background-color: black;
+        }
+
+        .about {
+            padding-right: 1000px;
+            background-color: black;
+        }
+
+        .Career {
+            background-color: black;
+        }
+
+        .Latest {
+            background-color: black;
+        }
+
+        .con {
+            background-color: black;
+            padding-right: 10px;
+        }
+
+        .bgvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        /* inspired form gumroad website */
+        .button {
+            --bg: #000;
+            --hover-bg: #ff90e8;
+            --hover-text: #000;
+            color: #fff;
+            border: 1px solid var(--bg);
+            border-radius: 4px;
+            padding: 0.8em 2em;
+            background: var(--bg);
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            color: var(--hover-text);
+            transform: translate(-0.25rem, -0.25rem);
+            background: var(--hover-bg);
+            box-shadow: 0.25rem 0.25rem var(--bg);
+        }
+
+        .button:active {
+            transform: translate(0);
+            box-shadow: none;
+        }
+
+        .bb {
+
+            text-align: center;
+        }
+
+        .media {
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+
+        .media-body {
+            padding-left: 50px;
+            padding-top: 100px;
+            
+        }
+        .media-bodyy{
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+
+        .card {
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        button {
+            position: relative;
+            padding: 1em 1.8em;
+            outline: none;
+            border: 1px solid #303030;
+            background: #212121;
+            color: #ae00ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 15px;
+            overflow: hidden;
+            transition: 0.2s;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+            transition-delay: 0.6s;
+        }
+
+        button span {
+            position: absolute;
+        }
+
+        button span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ae00ff);
+        }
+
+        button:hover span:nth-child(1) {
+            left: 100%;
+            transition: 0.7s;
+        }
+
+        button span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #001eff);
+        }
+
+        button:hover span:nth-child(3) {
+            right: 100%;
+            transition: 0.7s;
+            transition-delay: 0.35s;
+        }
+
+        button span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #ae00ff);
+        }
+
+        button:hover span:nth-child(2) {
+            top: 100%;
+            transition: 0.7s;
+            transition-delay: 0.17s;
+        }
+
+        button span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #001eff);
+        }
+
+        button:hover span:nth-child(4) {
+            bottom: 100%;
+            transition: 0.7s;
+            transition-delay: 0.52s;
+        }
+
+        button:active {
+            background: #ae00af;
+            background: linear-gradient(to top right, #ae00af, #001eff);
+            color: #bfbfbf;
+            box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+            transition: 0.1s;
+        }
+
+        button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
+            transition: none;
+            transition-delay: none;
+        }
+        .learnm{
+            padding-top: 10px;
+            text-align: center;
+        }
+        .adidas{
+            padding-right: 20px;
+            padding-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #000;">
+
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-slate-800 border-bottom box-shadow mb-1">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="wor"><a class="nav-item nav-link" href="#">Work</a></div>
+            <div class="ser"><a class="nav-item nav-link" href="#">Services</a></div>
+            <div class="about"><a class="nav-item nav-link" href="#">About</a></div>
+            <div class="Career"><a class="nav-item nav-link" href="#">Career</a></div>
+            <div class="Latest"><a class="nav-item nav-link" href="#">Latest</a></div>
+            <div class="con"><a class="nav-item nav-link" href="#">Contact</a></div>
+
+        </div>
+        </div>
+
+    </nav>
+    <div class="inst">
+        <p style="font-size:90px;" style="font-style: oblique;"> 𝖂𝖔𝖗𝖑𝖉'𝖘 𝕭𝖊𝖘𝖙 𝕴𝖓𝖘𝖙𝖗𝖚𝖒𝖊𝖓𝖙𝖙</p>
+    </div>
+    <video id="bgvideo" controls width="1550px" height="600px">
+        <source src="Burg1.mp4" type="video/mp4">
+    </video>
+
+    <div class="view">
+        <p style="color: aliceblue;">𝐖𝐞 𝐚𝐫𝐞 𝐚 𝐦𝐮𝐥𝐭𝐢𝐝𝐢𝐬𝐜𝐢𝐩𝐥𝐢𝐧𝐚𝐫𝐲 𝐜𝐫𝐞𝐚𝐭𝐢𝐯𝐞 𝐜𝐨𝐦𝐩𝐚𝐧𝐲
+            𝐭𝐡𝐚𝐭 𝐫𝐞𝐝𝐞𝐟𝐢𝐧𝐞𝐬
+            𝐛𝐫𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞𝐬.</p>
+    </div>
+
+    <div class="bb">
+        <button class="button">
+            <a href='viewwork.html'> Learn More</a>
+        </button>
+    </div>
+
+    <div class="media">
+        <img src="nike.jpg" class="align-self-center mr-3" alt="..." height="450" width="300">
+        <div class="media-body">
+            <h1 style="color: aliceblue;"> High-Performance Marketing: An Interview with Nike’s Phil Knightby Geraldine
+                E. Willigan</h1>
+            <p class="mb-0" style="color: aliceblue;"> Nike is a champion brand builder. Its advertising slogans—“Bo
+                Knows,” “Just Do It,” “There Is No Finish Line”—have moved beyond advertising into popular expression.
+                Its athletic footwear and clothing have become a piece of Americana. Its brand name is as well-known
+                around the world as IBM and Coke HBR: Nike transformed the athletic shoe industry with technological innovations, but today many people know the company by its flashy ads and sports celebrities. Is Nike a technology company or a marketing company?.
+            </p>
+          <div class="learnm">
+                <button class="learmm">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href="viewwork.html">Learn more</a>
+            </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="media">
+        <div class="media-bodyy">
+          <h1 class="mt-0 mb-1" style="color: aliceblue;">THE HISTORY OF ADIDAS: A BACKGROUND OF COLLABORATION AND INNOVATION</h1>
+         <p style="color: aliceblue;"> The company was born from humble beginnings in the small town of Herzogenaurach in Bavaria, Germany. Adolf (Adi) Dassler was born there in 1900. He completed school, and a short apprenticeship as a baker, but decided against baking as a long-term career. After returning from conscription in the army at the end of World War One, he learned the skills of a shoemaker, and opened a small shoe repair business at the back of his family home.</p>
+         <div class="learnm">
+            <button class="learmm">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <a href="viewwork.html">Learn more</a>
+        </button>
+        </div>
+        </div>
+        <div class="adidas">
+            <img src="adidas.jpg" class="ml-3" alt="..." height="450" width="500">
+        </div>
+        
+      </div>
+   
+
+
+      <div class="media">
+        <img src="puma.jpg" class="align-self-center mr-3" alt="..." height="400" width="350">
+        <div class="media-body">
+            <h1 style="color: aliceblue;">PUMA’s journey towards more sustainable footwear</h1>
+            <p class="mb-0" style="color: aliceblue;">PUMA made sustainability an important part of its strategy when it introduced its first Code of Conduct in 1993. A lot has changed since then. Today, more than ever before, consumers and retailers expect companies to be a part of the solution to the world’s environmental challenges and ask for more sustainable product initiatives and ways to decouple consumption from carbon emissions.
+            </p>
+          <div class="learnm">
+                <button class="learmm">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <a href="viewwork.html">Learn more</a>
+            </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="view">
+        <p style="color: aliceblue;">ᴇxᴘʟᴏʀᴇ ᴀ ꜰᴇᴡ ᴏꜰ ᴏᴜʀ ᴍᴏꜱᴛ ɪᴍᴘᴀᴄᴛꜰᴜʟ ᴘʀᴏᴊᴇᴄᴛꜱ</p>
+    </div>
+
+    <div class="bb">
+        <button class="button">
+            <a href='viewwork.html'> Our Work</a>
+        </button>
+    </div>
+    <div class="container">
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal text-body-emphasis" style="color: #fff;">Pricing</h1>
+        <p class="fs-5 text-body-secondary" style="color: #fff;">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Free</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+      
+       
+          
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
